@@ -23,6 +23,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.answer);
         textView.setText(text);
 
+        //Destroy activity
         findViewById(R.id.destroy_all).setOnClickListener(view -> {
             MainActivity.isDestroyed = true;
             finish();
