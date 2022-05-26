@@ -22,4 +22,14 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
 
+    <string name="moveButton">Submit</string>
+
+    <!--    Text for second activity-->
+    <string name="main_text">Policies</string>
+    <string name="policy">Policy</string>
+    <string name="category">Product Category</string>
+    <string name="country">Origin Country</string>
+    <string name="brand">Brand</string>
+    <string name="destroy_btn">DESTROY</string>
+
 </resources>

@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.156" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_fire.xml" value="0.221" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_menu.xml" value="0.156" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.4925925925925926" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_result.xml" value="0.33" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/layout/app_bar.xml" value="0.33" />
+        <entry key="..\:/Users/nursultan.kasymbekov/AndroidStudioProjects/Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2975" />
       </map>
     </option>
   </component>

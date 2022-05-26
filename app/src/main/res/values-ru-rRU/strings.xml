@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="moveButton">Отправить</string>
+
+    <!--    Text for second activity-->
+    <string name="main_text">Политики</string>
+    <string name="policy">Политика</string>
+    <string name="category">Категория продукта</string>
+    <string name="country">Страна происхождения</string>
+    <string name="brand">Марка</string>
+    <string name="destroy_btn">Уничтожить</string>
+</resources>

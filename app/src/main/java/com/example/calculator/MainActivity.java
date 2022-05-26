@@ -2,6 +2,8 @@ package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Double d1, d2;
     private Boolean isOperationClicked;
     private String symbol;
+    public static boolean isDestroyed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 d2 = 0.0;
                 break;
         }
+        setAlphaZero();
     }
 
     public void onOperationClick(View view) {
@@ -94,14 +98,18 @@ public class MainActivity extends AppCompatActivity {
                     }
                     textView.setText(s);
                 }
+                setAlphaZero();
                 break;
             case R.id.btn_equal:
                 performOperation(symbol);
+                //Show button to move
+                findViewById(R.id.btn_move).animate().alpha(1);
                 break;
             case R.id.btn_dot:
                 if (!textView.getText().toString().contains(".")) {
                     textView.append(".");
                 }
+                setAlphaZero();
                 break;
         }
     }
@@ -121,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
         d1 = Double.parseDouble(textView.getText().toString());
         setVariable(d1);
         isOperationClicked = true;
+        setAlphaZero();
     }
 
     public void performOperation(String s) {
@@ -156,5 +165,24 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(d.toString());
         }
 
+    }
+
+    public void setAlphaZero() {
+        findViewById(R.id.btn_move).animate().alpha(0);
+    }
+
+    public void OpenActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+        String s = textView.getText().toString();
+        intent.putExtra("value", s);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isDestroyed) {
+            finish();
+        }
     }
 }
